@@ -26,3 +26,7 @@ func (m MHR) MetresMinute() MM {
 func (m MM) MetresSecond() MS {
 	return MS(m / 60)
 }
+
+func (m MS) KilometersHr() KMHR {
+	return KMHR(m / 1000 * 60 * 60)
+}
